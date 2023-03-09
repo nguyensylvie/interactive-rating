@@ -1,0 +1,80 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.component {
+  font-family: "Overpass", sans-serif;
+  background-color: hsl(216, 12%, 8%);
+  min-height: 100vh;
+  color: hsl(0, 0%, 100%);
+}
+.component .box {
+  padding: 1.75rem;
+  max-width: 25rem;
+  background-color: hsl(213, 19%, 14%);
+  border-radius: 1.25rem;
+}
+.component .box .icon {
+  background-color: hsla(216, 12%, 54%, 0.2);
+  padding: 0.75rem;
+}
+.component .box h1 {
+  font-size: 1.875rem;
+}
+.component .box .ty {
+  font-size: 1.5625rem;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 0.625rem;
+}
+.component .box p {
+  font-size: 0.9375rem;
+  color: hsl(217, 12%, 63%);
+}
+.component .box .btn-primary {
+  background-color: hsl(25, 97%, 53%);
+  border: 0;
+  border-radius: 3.125rem;
+  font-size: 0.9375rem;
+  padding: 0.5625rem 0;
+}
+.component .box .btn-primary:hover {
+  transition: 0.5s;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+.component .box label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9375rem;
+  background-color: hsla(216, 12%, 54%, 0.2);
+  color: hsl(217, 12%, 63%);
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.component .box label:hover {
+  transition: 0.5s;
+  background-color: hsl(216, 12%, 54%);
+  color: hsl(0, 0%, 100%);
+}
+.component .box input[type=radio] {
+  display: none;
+}
+.component .box input[type=radio]:checked + label {
+  transition: 0.5s;
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+.component .box .msg {
+  color: hsl(25, 97%, 53%);
+  background-color: hsla(216, 12%, 54%, 0.2);
+  border-radius: 1.25rem;
+  font-size: 0.875rem;
+  margin: 1.5625rem auto;
+  padding: 0.3125rem 0;
+  max-width: 10.625rem;
+}/*# sourceMappingURL=style.css.map */

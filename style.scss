@@ -1,0 +1,98 @@
+// Colors Variables
+$orange: hsl(25, 97%, 53%);
+$light-grey: hsl(217, 12%, 63%);
+$medium-grey: hsl(216, 12%, 54%);
+$grey: hsla(216, 12%, 54%, 0.2);
+$dark-blue: hsl(213, 19%, 14%);
+$very-dark-blue: hsl(216, 12%, 8%);
+$white: hsl(0, 0%, 100%);
+
+// Font Variable
+$overpass: "Overpass", sans-serif;
+
+//Function convert pixel values to rem
+@function rem($px-value) {
+  @return calc($px-value / 16) + rem;
+}
+
+//Style
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.component {
+  font-family: $overpass;
+  background-color: $very-dark-blue;
+  min-height: 100vh;
+  color: $white;
+  .box {
+    padding: rem(28);
+    max-width: rem(400);
+    background-color: $dark-blue;
+    border-radius: rem(20);
+    .icon {
+      background-color: $grey;
+      padding: rem(12);
+    }
+    h1 {
+      font-size: rem(30);
+    }
+    .ty {
+      font-size: rem(25);
+      color: $white;
+      margin-bottom: rem(10);
+    }
+    p {
+      font-size: rem(15);
+      color: $light-grey;
+    }
+    .btn-primary {
+      background-color: $orange;
+      border: 0;
+      border-radius: rem(50);
+      font-size: rem(15);
+      padding: rem(9) 0;
+      &:hover {
+        transition: 0.5s;
+        background-color: $white;
+        color: $orange;
+      }
+    }
+    label {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: rem(15);
+      background-color: $grey;
+      color: $light-grey;
+      height: rem(40);
+      width: rem(40);
+      border-radius: 50%;
+      cursor: pointer;
+      &:hover {
+        transition: 0.5s;
+        background-color: $medium-grey;
+        color: $white;
+      }
+    }
+    input[type="radio"] {
+      display: none;
+    }
+    input[type="radio"]:checked + label {
+      transition: 0.5s;
+      background-color: $orange;
+      color: $white;
+    }
+    .msg {
+      color: $orange;
+      background-color: $grey;
+      border-radius: rem(20);
+      font-size: rem(14);
+      margin: rem(25) auto;
+      padding: rem(5) 0;
+      max-width: rem(170);
+    }
+  }
+}

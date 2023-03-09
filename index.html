@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link href="./css/style.css" rel="stylesheet" />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <div
+      class="component d-flex justify-content-center align-items-center"
+      role="main"
+    >
+      <form>
+        <div class="box mx-4">
+          <img
+            src="./images/icon-star.svg"
+            alt="Icon star"
+            class="rounded-circle icon mb-4"
+          />
+          <h1>How did we do?</h1>
+          <p>
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+          <div class="row pt-2 pb-4">
+            <div class="col px-2">
+              <input type="radio" name="rating" value="1" id="rating1" />
+              <label for="rating1" class="rating">1</label>
+            </div>
+            <div class="col px-2">
+              <input type="radio" name="rating" value="2" id="rating2" />
+              <label for="rating2" class="rating">2</label>
+            </div>
+            <div class="col px-2">
+              <input type="radio" name="rating" value="3" id="rating3" />
+              <label for="rating3" class="rating">3</label>
+            </div>
+            <div class="col px-2">
+              <input type="radio" name="rating" value="4" id="rating4" />
+              <label for="rating4" class="rating">4</label>
+            </div>
+            <div class="col px-2">
+              <input type="radio" name="rating" value="5" id="rating5" />
+              <label for="rating5" class="rating">5</label>
+            </div>
+          </div>
+          <div class="d-grid">
+            <button type="submit" class="btn btn-primary">SUBMIT</button>
+          </div>
+        </div>
+      </form>
+
+      <div class="box text-center mx-4" id="thank-you" hidden>
+        <img
+          src="./images/illustration-thank-you.svg"
+          alt="Illustration"
+          class="pb-2"
+        />
+        <div class="msg"></div>
+        <p class="ty">Thank you!</p>
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="text/javascript" src="./js/script.js"></script>
+  </body>
+</html>
